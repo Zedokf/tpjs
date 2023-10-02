@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nom": "Casserole en acier inoxydable",
+        "prix": 29.99,
+        "description": "Casserole en acier inoxydable de haute qualité, idéale pour la cuisine quotidienne.",
+        "quantite": 20
+    },
+    {
+        "id": 2,
+        "nom": "Casserole antiadhésive",
+        "prix": 39.99,
+        "description": "Casserole antiadhésive avec revêtement en céramique pour une cuisson sans problème.",
+        "quantite": 15
+    },
+    {
+        "id": 3,
+        "nom": "Casserole en fonte",
+        "prix": 49.99,
+        "description": "Casserole en fonte émaillée pour une répartition uniforme de la chaleur.",
+        "quantite": 10
+    },
+    {
+        "id": 4,
+        "nom": "Casserole en cuivre",
+        "prix": 59.99,
+        "description": "Casserole en cuivre avec poignée en laiton pour une élégance classique.",
+        "quantite": 12
+    },
+    {
+        "id": 5,
+        "nom": "Casserole à vapeur",
+        "prix": 34.99,
+        "description": "Casserole à vapeur en acier inoxydable pour des repas sains.",
+        "quantite": 18
+    },
+    {
+        "id": 6,
+        "nom": "Casserole à soupe",
+        "prix": 24.99,
+        "description": "Casserole à soupe en aluminium avec couvercle.",
+        "quantite": 25
+    },
+    {
+        "id": 7,
+        "nom": "Casserole à induction",
+        "prix": 49.99,
+        "description": "Casserole adaptée à l'induction avec fond en acier inoxydable.",
+        "quantite": 8
+    },
+    {
+        "id": 8,
+        "nom": "Casserole à sauter",
+        "prix": 39.99,
+        "description": "Casserole à sauter en aluminium avec poignée ergonomique.",
+        "quantite": 14
+    },
+    {
+        "id": 9,
+        "nom": "Casserole à pâtes",
+        "prix": 29.99,
+        "description": "Casserole à pâtes en acier inoxydable avec insert pour égoutter les pâtes.",
+        "quantite": 16
+    },
+    {
+        "id": 10,
+        "nom": "Casserole à crêpes",
+        "prix": 19.99,
+        "description": "Casserole à crêpes antiadhésive pour des crêpes parfaites à chaque fois.",
+        "quantite": 22
+    }
+]
