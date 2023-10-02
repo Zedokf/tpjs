@@ -24,20 +24,13 @@
     align-items: center;
 }
 
-#header-search{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #header-page{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-img{
+#header-search>img{
     border-radius: 50%;
     width: 60px;
     height: 60px;;
@@ -48,4 +41,16 @@ img{
     height: 50%;
     border-radius: 20px;
     border:0;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+    
 }
