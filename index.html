@@ -6,11 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopNet</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default" defer></script>
 </head>
 
 <body>
+    <div id="header">
+        <div id="header-search">
+            <img id="logo" src="img/Emblème-Amazon.jpg"/>
+            <h1> ShopNet</h1>
+            <input id="search" type="text"/>
+            <img id="mode" src="img/pngtree-dark-mode-icon-light-png-clipart-png-image_3811921.jpg"/>
+            <img id="langue" src="img/drapeau-france-rond.jpg"/>
+        </div>
 
+        <div id="header-page">
+            <div>
+                <h1>Qui somme nous?</h1>
+            </div>
+            <div>
+                <h1>Nos produits</h1>
+            </div>
+            <div>
+                <h1>Nous contacter</h1>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Nos valeurs</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a lorem et lectus varius blandit eget bibendum nunc. Praesent nibh nisl, scelerisque ut justo egestas, semper sollicitudin dui.Pellentesque a lorem et lectus varius blandit eget bibendum nuncPellentesque a lorem et lectus varius blandit eget bibendum nunc</p>
+            </div>
+          </div>
+        <div id="container2">
+            <div> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a lorem et lectus varius blandit eget bibendum nunc. Praesent nibh nisl, scelerisque ut justo egestas, semper sollicitudin dui.Pellentesque a lorem et lectus varius blandit eget bibendum nuncPellentesque a lorem et lectus varius blandit eget bibendum nunc</p>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 700px;height: 700px; justify-content: center;">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/CC-1200-x-600-Firstline-Workers-Modern-Workplace-Blog-1200x577.jpg" class="d-block w-100" alt="travail">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/FrontlineWorkers.jpg.jpg" class="d-block w-100" alt="bisounours">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/istockphoto-1299734004-612x612.jpg" class="d-block w-100" alt="pk tu lis enfaite">
+                </div>
+                </div>
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a lorem et lectus varius blandit eget bibendum nunc. Praesent nibh nisl, scelerisque ut justo egestas, semper sollicitudin dui.Pellentesque a lorem et lectus varius blandit eget bibendum nuncPellentesque a lorem et lectus varius blandit eget bibendum nunc</p>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta"});</script>
 </body>
 
 </html>
