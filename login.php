@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (password_verify($password, $user['mdp'])) {
             $_SESSION['name'] = $user['nom'];
 
-            header('Location: profile.php');
+            header('Location: login.php');
         } else {
             $error = 'Password faux';
         }
@@ -48,6 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include('nav.php'); ?>
     <div style="margin-top: 20px;"></div>
     <div class="mx-auto p-2" style="background-color: white;width: 25%; border-radius: 20px;">
+        <?php if (isset($error)) {
+            echo $error;
+        } ?>
         <form action="" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
