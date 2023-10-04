@@ -12,7 +12,7 @@
     Veuillez accepter notre politique de confidentialité.
     <button id="doneConfidential">OK</button>
   </div>
-  <div class="container text-start" style="background-color: whitesmoke;">
+  <div class="container text-start" style="background-color: whitesmoke; border-radius: 20px;">
     <div class="row">
       <div class="col">
         <img src="img/CC-1200-x-600-Firstline-Workers-Modern-Workplace-Blog-1200x577.jpg" class="img-thumbnail" alt="">
