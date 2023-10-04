@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!$username || !$password || !$email) {
         $error = 'ERROR';
     } else {
-        $hashPassword = password_hash($password, PASSWORD_ARGON2I);
+        $hashPassword = password_hash($password, PASSWORD_BCRYPT);
 
         $statement = $pdo->prepare('INSERT INTO utilisateur VALUES(
             DEFAULT,
