@@ -1,0 +1,9 @@
+body{
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+#barre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
