@@ -1,6 +1,7 @@
 addEventListener('load', () => {
 
-    /** Politique de confidentialité */
+    /** Politique de confidentialité */ 
+    localStorage.getItem("darkmode") === null ? localStorage.setItem("darkmode",document.body.style.backgroundColor) : localStorage.getItem("darkmode")
     const confidential = localStorage.getItem('confidential');
     const doneConfidential = document.getElementById('doneConfidential');
     const divConfidential = document.getElementById('confidential');
@@ -22,17 +23,14 @@ addEventListener('load', () => {
         divConfidential.style.display = "none"
     }
 
-    /** DarkMode */
-    // document.body.style.backgroundColor = localStorage.getItem("darkmode", document.body.style.backgroundColor)
-    // const mode = document.getElementById("mode");
-    // mode.addEventListener('click', () => {
-    //     if (document.body.style.backgroundColor == '') {
-    //         document.body.style.backgroundColor = "#000000"
-    //     } else {
-    //         document.body.style.backgroundColor = ''
-    //     }
-    //     localStorage.setItem("darkmode", document.body.style.backgroundColor)
-    // })
-
-
+    document.body.style.backgroundColor = localStorage.getItem("darkmode", parent.document.body.style.backgroundColor)
 })
+
+function darkmode(){
+    if (document.body.style.backgroundColor == '') {
+        document.body.style.backgroundColor = "#000000"
+    } else {
+        document.body.style.backgroundColor = ''
+    }
+    localStorage.setItem("mode", document.body.style.backgroundColor)
+}
