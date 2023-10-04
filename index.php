@@ -13,7 +13,7 @@
 </head>
 
 <body style="background-color: grey;">
-  <?php include('nav.html') ?>
+  <?php include('nav.html'); ?>
   <div id="confidential">
     Veuillez accepter notre politique de confidentialité.
     <button id="doneConfidential">OK</button>
