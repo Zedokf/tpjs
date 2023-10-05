@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: green !important;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: green !important;" id="barre">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.php" style="color:white;">ShopNet</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,12 +32,12 @@
             <?php } ?>
 
           </ul>
-          <div class="container w-100" id="barre">
+          <div class="container w-100" id="search">
             <form class="d-flex" role="search" style="flex-grow: 1;flex-shrink: 1;">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-danger" type="submit">Search</button>
             </form>
-            <div>
+            <div id="boutton">
               <a class="navbar-brand" id="mode">
                 <img src="img/drapeau-france-rond.jpg" alt="Bootstrap" width="40" height="40" style="border-radius: 20px;">
               </a>
