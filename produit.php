@@ -13,9 +13,11 @@ $pdo = require_once 'db.php';
 
 <body>
     <?php include('nav.php'); ?>
-    <a href="add-product.php">
-        <button class="btn btn-primary">Ajouter un produit</button>
-    </a>
+    <?php if ($_SESSION['id']) { ?>
+        <a href="add-product.php">
+            <button class="btn btn-primary">Ajouter un produit</button>
+        </a>
+    <?php } ?>
     <div class="d-flex justify-content-between">
         <?php
         $selectProduct = $pdo->query('SELECT * FROM produit');
@@ -25,7 +27,6 @@ $pdo = require_once 'db.php';
                 <div class="card-body">
                     <h5 class="card-title"><?= $product['nom'] ?> - <span class="small"><?= $product['prix'] ?>€</span></h5>
                     <p class="card-text"><?= $product['description'] ?></p>
-                    <a href="#" class="btn btn-primary">Voir</a>
                     <?php if ($product['id_utilisateur'] === $_SESSION['id']) { ?>
                         <a href="add-product.php?idProduct=<?= $product['id'] ?>" class="btn btn-warning">Modifier</a>
                         <a href="delete-product.php?id=<?= $product['id'] ?>" class="btn btn-danger">Supprimer</a>
