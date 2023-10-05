@@ -21,12 +21,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             DEFAULT,
             :email,
             :nom,
-            :mdp
+            :mdp,
+            :admin
         )');
 
         $statement->bindValue(':email', $email);
         $statement->bindValue(':nom', $username);
         $statement->bindValue(':mdp', $hashPassword);
+        $statement->bindValue(':admin', '');
         $statement->execute();
 
         header('Location: login.php');
