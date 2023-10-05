@@ -27,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if (password_verify($password, $user['mdp'])) {
             $_SESSION['name'] = $user['nom'];
+            $_SESSION['id'] = $user['id'];
 
             header('Location: login.php');
         } else {
