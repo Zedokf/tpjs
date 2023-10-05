@@ -8,6 +8,8 @@ $pdo = require_once 'db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php require_once('Components/_head.php'); ?>
+        <script src="assets/js/produit.js" defer></script>
+
     <title>Produits</title>
 </head>
 
@@ -18,6 +20,14 @@ $pdo = require_once 'db.php';
             <button class="btn btn-primary">Ajouter un produit</button>
         </a>
     <?php } ?>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h4 class="card-title">Filtre</h4>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Prix</h6>
+            <label for="minPrix" class="form-label">Min:</label> <p id="valueMin">0€</p>
+            <input type="range" class="form-range" id="minPrix" min="0" value="0" max="1000" step="10">
+        </div>
+    </div>
     <div class="d-flex justify-content-between">
         <?php
         $selectProduct = $pdo->query('SELECT * FROM produit');
