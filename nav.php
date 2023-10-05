@@ -22,7 +22,7 @@ if ($_SESSION['id']) {
           <a class="nav-link" href="produit.php" style="color:white;">Produits</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color:white;">Nous contacter</a>
+          <a class="nav-link" href="contact.php" style="color:white;">Nous contacter</a>
         </li>
         <?php if (!$_SESSION['name']) { ?>
           <li class="nav-item dropdown">
